@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Forum Game</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <main id="passwordView">
+        <div class="header">
+            <img src="assets/images/pn.png" alt="" width="90px">
+            <img src="assets/images/collaboration.png" alt="" width="100px">
+            <img src="assets/images/sipar.png" alt="" width="100px">
+        </div>
+        <div class="line"></div>
+   
+
+
+        <label>Enter your code (You can try 2 times only !)</label>
+        <input
+          type="password"
+          name="password"
+          id="passwordInput"
+          class="input"
+        />
+
+        <button id="checkButton">Check Code !</button>
+        <div class="bomb">
+            <img src="assets/images/bomb.png" width="150"/>
+            <h2>Can you <span>defuse</span> the bomb?</h2>
+          </div>
+      </main>
+
+      <!-- Lost view -->
+      <main id="lostView" style="display: none">
+        <img src="assets/images/explosion.png" />
+        <h1>You lost !</h1>
+        <button id="tryAgainButton">Try again !</button>
+      </main>
+
+      <!-- Won view -->
+      <main id="wonView" style="display: none">
+        <img src="assets/images/win.png" width="400" />
+        <h1>You won !</h1>
+        <button id="backToGameButton">Back to the game!</button>
+      </main>
+     
+    </div>
+  </body>
+</html>
